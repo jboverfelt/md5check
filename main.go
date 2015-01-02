@@ -19,7 +19,7 @@ func main() {
 	filename := args[0]
 	knownSum, err := hex.DecodeString(args[1])
 	if err != nil {
-		fmt.Println("Error decoding provided md5 hash", err)
+		fmt.Println("Error decoding provided md5 hash: ", err)
 		os.Exit(1)
 	}
 
