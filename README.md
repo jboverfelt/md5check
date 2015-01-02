@@ -2,6 +2,7 @@ md5check
 ========
 
 A tool to check md5 sums given an untrusted file and a sum that has been received out of band.
+I'm hoping this tool will be useful to others, but originally it was intended as a project to familiarize myself with creating basic command line applications in Go.
 
 Usage
 -----
