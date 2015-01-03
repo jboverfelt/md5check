@@ -38,14 +38,13 @@ func main() {
 		os.Exit(1)
 	}
 
+	file.Close()
 	fileSum := sum.Sum(nil)
 
 	if bytes.Compare(knownSum, fileSum) != 0 {
 		fmt.Printf("MISMATCH! MD5 Sum of given file was: %x\n", fileSum)
-		file.Close()
 		os.Exit(1)
 	} else {
 		fmt.Println("OK")
-		file.Close()
 	}
 }
